@@ -1,0 +1,534 @@
+2018-07-07 John Darrington <john@darrington.wattle.id.au>
+
+        Allow Bootstrap to work on MacOS.
+
+
+
+2018-07-07 John Darrington <john@darrington.wattle.id.au>
+
+        Fix bug where when there was no active cell, the place where it would have been was blanked.
+
+
+
+2018-07-07 John Darrington <john@darrington.wattle.id.au>
+
+        Whitespace changes only
+
+
+
+2017-10-11 John Darrington <john@darrington.wattle.id.au>
+
+        Update NEWS
+
+
+
+2017-10-09 John Darrington <john@darrington.wattle.id.au>
+
+        Fix crash when pasting from primary
+
+
+
+2017-10-05 John Darrington <john@darrington.wattle.id.au>
+
+        SswXpaned: Remove unused code
+
+
+
+2017-10-05 John Darrington <john@darrington.wattle.id.au>
+
+        Bump version number
+
+
+
+2017-10-05 John Darrington <john@darrington.wattle.id.au>
+
+        Relax Gtk+ requirement to 3.18
+
+
+
+2017-09-27 John Darrington <john@darrington.wattle.id.au>
+
+        Makefile.am: Use old fashioned pattern rule to keep automake quiet
+
+
+
+2017-09-26 John Darrington <john@darrington.wattle.id.au>
+
+        Makefile.am
+
+
+
+2017-09-26 John Darrington <john@darrington.wattle.id.au>
+
+        Fix bug where the editing widget would get displaced if it was not in the visible range.
+
+
+
+2017-09-24 John Darrington <john@darrington.wattle.id.au>
+
+        Emit a "resize-item" signal on the axis model when an item is dragged.
+
+
+
+2017-09-24 John Darrington <john@darrington.wattle.id.au>
+
+        Use AC_PROG_CC_STDC instead of AC_PROG_CC
+
+
+
+2017-09-23 John Darrington <john@darrington.wattle.id.au>
+
+        Makefile.am: Correct broken documentation build.
+
+
+
+2017-09-23 John Darrington <john@darrington.wattle.id.au>
+
+        Fix brokenness when a focus out event occurs in the middle of editing
+
+
+
+2017-09-22 John Darrington <john@darrington.wattle.id.au>
+
+        SswSheet: Avoid resize callbacks getting called on inappropriate models
+
+
+
+2017-09-22 John Darrington <john@darrington.wattle.id.au>
+
+        Restart editing the entire row/column is selected
+
+
+
+2017-09-21 John Darrington <john@darrington.wattle.id.au>
+
+        Fix bug where data would be pasted from wrong cell range.
+
+
+
+2017-09-21 John Darrington <john@darrington.wattle.id.au>
+
+        ssw-html-parser.c: New file - implement pasting from html
+
+
+
+2017-09-20 John Darrington <john@darrington.wattle.id.au>
+
+         SswSheetBody (draw_selection): Fix yet more issues with the selection rendering
+
+
+
+2017-09-20 John Darrington <john@darrington.wattle.id.au>
+
+        clipit_utf8: separate data with tab instead of vertical bar
+
+
+
+2017-09-19 John Darrington <john@darrington.wattle.id.au>
+
+        SswSheetBody (draw_selection): Fix further bugs relating to display of selection.
+
+
+
+2017-09-18 John Darrington <john@darrington.wattle.id.au>
+
+        SswSheetBody (draw_selection): Fix bug where the selection disappeared when it was only partially visible.
+
+
+
+2017-09-18 John Darrington <john@darrington.wattle.id.au>
+
+        Avoid warnings which a sheet is destroyed but its model still alive.
+
+
+
+2017-09-18 John Darrington <john@darrington.wattle.id.au>
+
+        LDADD flags: Mention the higher level libraries first.
+
+
+
+2017-09-16 John Darrington <john@darrington.wattle.id.au>
+
+        SswSheet: New properties: "vertical-draggable" and "horizontal-draggable"
+
+
+
+2017-09-16 John Darrington <john@darrington.wattle.id.au>
+
+        SswSheetAxis: New property: "draggable"
+
+
+
+2017-09-16 John Darrington <john@darrington.wattle.id.au>
+
+        Remove diagnostic code
+
+
+
+2017-09-16 John Darrington <john@darrington.wattle.id.au>
+
+        Change dependency of Gtk+ to 3.20.0
+
+
+
+2017-09-16 John Darrington <john@darrington.wattle.id.au>
+
+        Do not use the -D flag for install.
+
+
+
+2017-09-16 John Darrington <john@darrington.wattle.id.au>
+
+        Avoid compiler warning
+
+
+
+2017-09-16 John Darrington <john@darrington.wattle.id.au>
+
+        Bump version number to 0.2
+
+
+
+2017-09-14 John Darrington <john@darrington.wattle.id.au>
+
+        Add dummy "value-changed" callback
+
+
+
+2017-09-14 John Darrington <john@darrington.wattle.id.au>
+
+        Set the default "editable" property to FALSE
+
+
+
+2017-09-14 John Darrington <john@darrington.wattle.id.au>
+
+        Update file headers
+
+
+
+2017-09-13 John Darrington <john@darrington.wattle.id.au>
+
+        CustomAxisModel: Make it a subclass of SswAxisModel
+
+
+
+2017-09-13 John Darrington <john@darrington.wattle.id.au>
+
+        Only set the size property on models which have it
+
+
+
+2017-09-12 John Darrington <john@darrington.wattle.id.au>
+
+        Fix cut and paste errors
+
+
+
+2017-09-12 John Darrington <john@darrington.wattle.id.au>
+
+        SswSingleSheet.c: Set the label of the global button to the empty string
+
+
+
+2017-09-12 John Darrington <john@darrington.wattle.id.au>
+
+        Documentation: Add a description about adding a model to the sheet
+
+
+
+2017-09-12 John Darrington <john@darrington.wattle.id.au>
+
+        Avoid some GtkCriticals
+
+
+
+2017-09-11 John Darrington <john@darrington.wattle.id.au>
+
+        Set default horizontal and vertical axes
+
+
+
+2017-09-11 John Darrington <john@darrington.wattle.id.au>
+
+        Start writing the manual.
+
+
+
+2017-09-11 John Darrington <john@darrington.wattle.id.au>
+
+        SswAxisModel: New properties: "post-button-create-func and post-button-create-func-data"
+
+
+
+2017-09-07 John Darrington <john@darrington.wattle.id.au>
+
+        bootstrap: Avoid failure when no ChangeLog file exists
+
+
+
+2017-09-07 John Darrington <john@darrington.wattle.id.au>
+
+        Whitespace changes only
+
+
+
+2017-09-06 John Darrington <john@darrington.wattle.id.au>
+
+        Fix typo in comment
+
+
+
+2017-09-06 John Darrington <john@darrington.wattle.id.au>
+
+        SheetBody (key_press_event) return FALSE on unhandled key.
+
+
+
+2017-09-05 John Darrington <john@darrington.wattle.id.au>
+
+        Set the vmodel and hmodel sizes from the data model
+
+
+
+2017-09-05 John Darrington <john@darrington.wattle.id.au>
+
+        Update the editor widget when the sheet value has changed
+
+
+
+2017-09-05 John Darrington <john@darrington.wattle.id.au>
+
+        Update TODO
+
+
+
+2017-09-03 John Darrington <john@darrington.wattle.id.au>
+
+        New module: CustomAxis.
+
+
+
+2017-09-02 John Darrington <john@darrington.wattle.id.au>
+
+        Bump version number
+
+
+
+2017-09-02 John Darrington <john@darrington.wattle.id.au>
+
+        ssw-datum: Remove this object
+
+
+
+2017-09-01 John Darrington <john@darrington.wattle.id.au>
+
+        Move datum_create_func to ssw-datum.c
+
+
+
+2017-09-01 John Darrington <john@darrington.wattle.id.au>
+
+        New function: datum_create_func
+
+
+
+2017-09-01 John Darrington <john@darrington.wattle.id.au>
+
+        cell_fill_func: Remove parameter old_widget
+
+
+
+2017-06-24 John Darrington <john@darrington.wattle.id.au>
+
+        Selected Cell Indicator: Use a dotted line when the widget is unfocused
+
+
+
+2017-06-23 John Darrington <john@darrington.wattle.id.au>
+
+        Redraw the sheet body when the forward conversion function changes
+
+
+
+2017-06-21 John Darrington <john@darrington.wattle.id.au>
+
+        Makefile.am: Add dist-hook to generate ChangeLog
+
+
+
+2017-06-21 John Darrington <john@darrington.wattle.id.au>
+
+        Fix bug where the active cell would jump 2 cells back when editing a new line
+
+
+
+2017-06-21 John Darrington <john@darrington.wattle.id.au>
+
+        Adjust formatting of README
+
+
+
+2017-06-17 John Darrington <john@darrington.wattle.id.au>
+
+        Remove 'foreign' option from configure.ac
+
+
+
+2017-06-17 John Darrington <john@darrington.wattle.id.au>
+
+        Add AUTHORS and README
+
+
+
+2017-06-14 John Darrington <john@darrington.wattle.id.au>
+
+        Correct include path in .pc file
+
+
+
+2017-06-06 John Darrington <john@darrington.wattle.id.au>
+
+        Fix crash when resizing a column when no cell is selected
+
+
+
+2017-06-06 John Darrington <john@darrington.wattle.id.au>
+
+        Allow drawing of selected cell in the new row
+
+
+
+2017-06-06 John Darrington <john@darrington.wattle.id.au>
+
+        Fix bug where rendering damage occured when resizing a row/column
+
+
+
+2017-06-06 John Darrington <john@darrington.wattle.id.au>
+
+        Virtual model: Properly set the number of rows when the data model changes.
+
+
+
+2017-06-06 John Darrington <john@darrington.wattle.id.au>
+
+        Avoid criticals when destroying widget
+
+
+
+2017-06-04 John Darrington <john@darrington.wattle.id.au>
+
+        SswSheetBody: Fix memory leak
+
+
+
+2017-06-04 John Darrington <john@darrington.wattle.id.au>
+
+        Set the state flags properly when retrieving backgroud colour.
+
+
+
+2017-06-04 John Darrington <john@darrington.wattle.id.au>
+
+        Rename "grid" -> "splitter"
+
+
+
+2017-06-04 John Darrington <john@darrington.wattle.id.au>
+
+        SswXpaned: Correct calculation of get_prefered_height/width
+
+
+
+2017-06-03 John Darrington <john@darrington.wattle.id.au>
+
+        Reduce scope of variable in draw callback
+
+
+
+2017-06-03 John Darrington <john@darrington.wattle.id.au>
+
+        Do not unnecessarily allocate style objects in draw callback
+
+
+
+2017-06-03 John Darrington <john@darrington.wattle.id.au>
+
+        Avoid emitting signals after the widget has been destroyed.
+
+
+
+2017-05-31 John Darrington <john@darrington.wattle.id.au>
+
+        Canonicalise name
+
+
+
+2017-05-31 John Darrington <john@darrington.wattle.id.au>
+
+        Reorder and limit scope
+
+
+
+2017-05-31 John Darrington <john@darrington.wattle.id.au>
+
+        SswXpaned: Deal properly with right-to-left locales
+
+
+
+2017-05-30 John Darrington <john@darrington.wattle.id.au>
+
+        Fix some memory leaks
+
+
+
+2017-05-30 John Darrington <john@darrington.wattle.id.au>
+
+        New object: SswXPaned to provide the split screen functionality.
+
+
+
+2017-05-30 John Darrington <john@darrington.wattle.id.au>
+
+        bootstrap: Call autoheader to create config.h.in
+
+
+
+2017-05-28 John Darrington <john@darrington.wattle.id.au>
+
+        Move header files out of public reach
+
+
+
+2017-05-28 John Darrington <john@darrington.wattle.id.au>
+
+        Makefile.am: demo_demo_LDADD: use libspread-sheet-widget.la instead of -lspread-sheet-widget
+
+
+
+2017-05-27 John Darrington <john@darrington.wattle.id.au>
+
+        Remove config.h from list of include_HEADERS
+
+
+
+2017-05-27 John Darrington <john@darrington.wattle.id.au>
+
+        Create libdir if it doesn't already exist
+
+
+
+2017-05-27 John Darrington <john@darrington.wattle.id.au>
+
+        Do not install the demo program
+
+
+
+2017-05-26 John Darrington <jmd@gnu.org>
+
+        First commit of spread-sheet-widget.
+
+
+
