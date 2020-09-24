@@ -6,7 +6,7 @@
 #
 Name     : ssw
 Version  : 0.3
-Release  : 1
+Release  : 2
 URL      : http://alpha.gnu.org/gnu/ssw/spread-sheet-widget-0.3.tar.gz
 Source0  : http://alpha.gnu.org/gnu/ssw/spread-sheet-widget-0.3.tar.gz
 Source1 : http://alpha.gnu.org/gnu/ssw/spread-sheet-widget-0.3.tar.gz.sig
