@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x6A233DCD47A92289 (jmd@gnu.org)
 #
 Name     : ssw
-Version  : 0.3
-Release  : 2
-URL      : http://alpha.gnu.org/gnu/ssw/spread-sheet-widget-0.3.tar.gz
-Source0  : http://alpha.gnu.org/gnu/ssw/spread-sheet-widget-0.3.tar.gz
-Source1 : http://alpha.gnu.org/gnu/ssw/spread-sheet-widget-0.3.tar.gz.sig
+Version  : 0.6
+Release  : 3
+URL      : http://alpha.gnu.org/gnu/ssw/spread-sheet-widget-0.6.tar.gz
+Source0  : http://alpha.gnu.org/gnu/ssw/spread-sheet-widget-0.6.tar.gz
+Source1  : http://alpha.gnu.org/gnu/ssw/spread-sheet-widget-0.6.tar.gz.sig
 Summary  : A spreadsheet widget for Gtk+
 Group    : Development/Tools
 License  : GPL-3.0
@@ -60,22 +60,22 @@ license components for the ssw package.
 
 
 %prep
-%setup -q -n spread-sheet-widget-0.3
-cd %{_builddir}/spread-sheet-widget-0.3
+%setup -q -n spread-sheet-widget-0.6
+cd %{_builddir}/spread-sheet-widget-0.6
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1574097951
+export SOURCE_DATE_EPOCH=1600986929
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %configure --disable-static
 make  %{?_smp_mflags}
@@ -85,13 +85,13 @@ export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-make VERBOSE=1 V=1 %{?_smp_mflags} check
+make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1574097951
+export SOURCE_DATE_EPOCH=1600986929
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/ssw
-cp %{_builddir}/spread-sheet-widget-0.3/COPYING %{buildroot}/usr/share/package-licenses/ssw/569844e570df184cda2fa87c61168bd6ccd73499
+cp %{_builddir}/spread-sheet-widget-0.6/COPYING %{buildroot}/usr/share/package-licenses/ssw/569844e570df184cda2fa87c61168bd6ccd73499
 %make_install
 
 %files
@@ -102,6 +102,7 @@ cp %{_builddir}/spread-sheet-widget-0.3/COPYING %{buildroot}/usr/share/package-l
 /usr/include/ssw-axis-model.h
 /usr/include/ssw-sheet-axis.h
 /usr/include/ssw-sheet.h
+/usr/include/ssw-virtual-model.h
 /usr/lib64/libspread-sheet-widget.so
 /usr/lib64/pkgconfig/spread-sheet-widget.pc
 
