@@ -1,5 +1,5 @@
 PKG_NAME := ssw
-URL = http://alpha.gnu.org/gnu/ssw/spread-sheet-widget-0.6.tar.gz
+URL = https://alpha.gnu.org/gnu/ssw/spread-sheet-widget-0.8.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common

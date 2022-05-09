@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x6A233DCD47A92289 (jmd@gnu.org)
 #
 Name     : ssw
-Version  : 0.6
-Release  : 3
-URL      : http://alpha.gnu.org/gnu/ssw/spread-sheet-widget-0.6.tar.gz
-Source0  : http://alpha.gnu.org/gnu/ssw/spread-sheet-widget-0.6.tar.gz
-Source1  : http://alpha.gnu.org/gnu/ssw/spread-sheet-widget-0.6.tar.gz.sig
+Version  : 0.8
+Release  : 4
+URL      : https://alpha.gnu.org/gnu/ssw/spread-sheet-widget-0.8.tar.gz
+Source0  : https://alpha.gnu.org/gnu/ssw/spread-sheet-widget-0.8.tar.gz
+Source1  : https://alpha.gnu.org/gnu/ssw/spread-sheet-widget-0.8.tar.gz.sig
 Summary  : A spreadsheet widget for Gtk+
 Group    : Development/Tools
 License  : GPL-3.0
@@ -60,23 +60,23 @@ license components for the ssw package.
 
 
 %prep
-%setup -q -n spread-sheet-widget-0.6
-cd %{_builddir}/spread-sheet-widget-0.6
+%setup -q -n spread-sheet-widget-0.8
+cd %{_builddir}/spread-sheet-widget-0.8
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1600986929
+export SOURCE_DATE_EPOCH=1652075900
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -88,10 +88,10 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1600986929
+export SOURCE_DATE_EPOCH=1652075900
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/ssw
-cp %{_builddir}/spread-sheet-widget-0.6/COPYING %{buildroot}/usr/share/package-licenses/ssw/569844e570df184cda2fa87c61168bd6ccd73499
+cp %{_builddir}/spread-sheet-widget-0.8/COPYING %{buildroot}/usr/share/package-licenses/ssw/569844e570df184cda2fa87c61168bd6ccd73499
 %make_install
 
 %files

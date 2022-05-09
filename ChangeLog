@@ -1,3 +1,53 @@
+2021-03-14 John Darrington <john@darrington.wattle.id.au>
+
+        Version 0.8 for w32 builds
+
+
+2020-10-10 John Darrington <john@darrington.wattle.id.au>
+
+        Change version number to 0.7
+
+
+2020-10-04 John Darrington <john@darrington.wattle.id.au>
+
+        Remove file cl-t
+
+
+2020-10-04 John Darrington <john@darrington.wattle.id.au>
+
+        Update AUTHORS
+
+
+2020-09-06 John Darrington <john@darrington.wattle.id.au>
+
+        xpaned: Add missing realize / unrealize calls
+
+
+2020-09-06 John Darrington <john@darrington.wattle.id.au>
+
+        Improve axis
+
+
+2020-09-06 John Darrington <john@darrington.wattle.id.au>
+
+        Add calls to gtk_widget_has_set_window as appropriate
+
+
+2020-09-06 John Darrington <john@darrington.wattle.id.au>
+
+        Avoid problem if size allocating when not realised
+
+
+2020-08-23 John Darrington <john@darrington.wattle.id.au>
+
+        Fix a few compiler warnings
+
+
+2020-08-16 John Darrington <john@darrington.wattle.id.au>
+
+        Added library dependencies for GTK and GLIB.
+
+
 2020-07-26 John Darrington <john@darrington.wattle.id.au>
 
         Change version number to 0.6
